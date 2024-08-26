@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITS-Formulario-FrontEnd</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Formulario de Datos</h1>
+    </header>
+
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required />
+      <label for="nacionalidad">Nacionalidad:</label>
+      <textarea id="nacionalidad" name="nacionalidad" required></textarea>
+      <label for="horario">Horarios de Trabajo:</label>
+      <select id="horario" name="horario" required>
+        <option value="">Seleccione un horario de trabajo</option>
+        <option value="mañana">Mañana - 8 a 12</option>
+        <option value="mediodia">Mediodía - 12 a 16</option>
+        <option value="tarde">Tarde - 16 a 20</option>
+        <option value="noche">Noche - 20 a 00</option>
+        <option value="nocturno">Nocturno - 00 a 4</option>
+        <option value="full-time">Full Time</option>
+      </select>
+      <button type="button" onclick="imprimir_consola()">
+        Imprimir en consola
+      </button>
+    </form>
+    <footer>
+      <p>Lucas Martin Duran</p>
+    </footer>
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>
